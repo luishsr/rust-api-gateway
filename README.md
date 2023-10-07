@@ -1,17 +1,19 @@
 # rust-api-gateway
-A sample API Gateway built in Rust (work in progress) for learning purposes
-
-API Gateway Project Documentation
+A sample API Gateway built in Rust (work in progress) for learning purposes.
 
 This API Gateway is built in Rust and serves as a foundational layer for directing incoming HTTP requests to appropriate services, along with providing several essential features for improving security, observability, and control.
+
+This first version is a rudimentary implementation upon which we will build new features along with tutorials in my Blog at www.luissoares.tech and https://medium.com/@luishrsoares
+
 Table of Contents
 
-    Features
-    Setup and Installation
-    Usage
-    Future Enhancements
+Features
+Setup and Installation
+Usage
+Future Enhancements
 
 Features
+
 1. Routing
 
     Requests can be routed to different mock services based on the endpoint path.
@@ -51,16 +53,9 @@ Setup and Installation
 
 To set up the API Gateway:
 
-    Clone the repository.
-    Install the required dependencies using cargo.
-    Run the gateway using cargo run.
-
-bash
-
-git clone [repository_url]
-cd api_gateway_project
-cargo install
-cargo run
+1. Clone the repository.
+2. Install the required dependencies using cargo.
+3. Run the gateway using cargo run.
 
 Usage
 
@@ -68,19 +63,18 @@ To test the API Gateway, use any HTTP client like curl or Postman.
 
 For JWT authenticated requests:
 
-bash
-
-curl -H "Authorization: [Your_JWT_Token]" http://localhost:8080/service1
+    curl -H "Authorization: [Your_JWT_Token]" http://localhost:8080/service1
 
 For non-authenticated requests:
 
-bash
-
-curl http://localhost:8080/service1
+    curl http://localhost:8080/service1
 
 Future Enhancements
 
-    Caching: Implement caching mechanisms for frequently accessed routes.
-    Advanced Rate Limiting: Integrate with tools like Redis for distributed rate limiting.
-    Service Discovery: Dynamically discover and route to services.
-    Metrics and Monitoring: Integrate with monitoring tools for system health checks and observability.
+Caching: Implement caching mechanisms for frequently accessed routes.
+
+Advanced Rate Limiting: Integrate with tools like Redis for distributed rate limiting.
+
+Service Discovery: Dynamically discover and route to services.
+
+Metrics and Monitoring: Integrate with monitoring tools for system health checks and observability.
