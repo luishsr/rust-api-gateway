@@ -1,5 +1,5 @@
 # rust-api-gateway
-A sample API Gateway built in Rust (work in progress) for learning purposes.
+A sample API Gateway built in Rust (work in progress) for learning purposes. You can follow along by reading the introduction article here: https://medium.com/dev-genius/implementing-a-fully-functional-api-gateway-in-rust-part-1-0eb1d9e8b08e.
 
 This API Gateway is built in Rust and serves as a foundational layer for directing incoming HTTP requests to appropriate services, along with providing several essential features for improving security, observability, and control.
 
