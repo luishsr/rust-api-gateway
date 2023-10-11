@@ -1,5 +1,10 @@
 # rust-api-gateway
-A sample API Gateway built in Rust (work in progress) for learning purposes. You can follow along by reading the introduction article here: https://medium.com/dev-genius/implementing-a-fully-functional-api-gateway-in-rust-part-1-0eb1d9e8b08e.
+A sample API Gateway built in Rust (work in progress) for learning purposes. 
+
+You can follow along by reading the tutorial articles:
+
+Part 1: [Implementing a Fully Functional API Gateway in Rust]: (https://medium.com/dev-genius/implementing-a-fully-functional-api-gateway-in-rust-part-1-0eb1d9e8b08e)
+Part 2: [Implementing a Dynamic Service Registration] (https://medium.com/@luishrsoares/implementing-a-fully-functional-api-gateway-in-rust-part-ii-dynamic-service-registry-b442728316c5)
 
 This API Gateway is built in Rust and serves as a foundational layer for directing incoming HTTP requests to appropriate services, along with providing several essential features for improving security, observability, and control.
 
@@ -49,32 +54,32 @@ Features
 
     Provides appropriate HTTP status codes and error messages for specific scenarios, e.g., missing routes or authentication failures.
 
-Setup and Installation
+8. Dynamic Service Registry
 
-To set up the API Gateway:
+Setup and Installation - Please, read the articles listed above
 
-1. Clone the repository.
-2. Install the required dependencies using cargo.
-3. Run the gateway using cargo run.
+Check out some interesting hands-on Rust articles:
 
-Usage
+🌟 [Implementing a Network Traffic Analyzer] (https://medium.com/@luishrsoares/implementing-a-network-traffic-analyzer-in-rust-50a772bb6564) 
+Ever wondered about the data packets zooming through your network? Unravel their mysteries with this deep dive into network analysis.
 
-To test the API Gateway, use any HTTP client like curl or Postman.
+🌟 [Building an Application Container in Rust] (https://medium.com/@luishrsoares/implementing-an-application-container-in-rust-3bdde7531ae0) 
+Join us in creating a lightweight, performant, and secure container from scratch! Docker’s got nothing on this. 😉
 
-For JWT authenticated requests:
+Stay with us for the next parts, where we’ll uncover even more exciting features and delve deeper into the vast world of microservices with Rust.
 
-    curl -H "Authorization: [Your_JWT_Token]" http://localhost:8080/service1
+Happy coding, and keep those Rust gears turning! 🦀
 
-For non-authenticated requests:
+Read more articles about Rust in my Rust Programming Library!
 
-    curl http://localhost:8080/service1
+Visit my Blog for more articles, news, and software engineering stuff!
 
-Future Enhancements
+Follow me on Medium, LinkedIn, and Twitter.
 
-Caching: Implement caching mechanisms for frequently accessed routes.
+Leave a comment, and drop me a message!
 
-Advanced Rate Limiting: Integrate with tools like Redis for distributed rate limiting.
+All the best,
 
-Service Discovery: Dynamically discover and route to services.
+Luis Soares
 
-Metrics and Monitoring: Integrate with monitoring tools for system health checks and observability.
+CTO | Tech Lead | Senior Software Engineer | Cloud Solutions Architect | Rust 🦀 | Golang | Java | ML AI & Statistics | Web3 & Blockchain
